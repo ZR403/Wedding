@@ -1137,6 +1137,77 @@ form[name="Contact Form"] #form-field-phone{
 
 
 
+/* Basic styling for the heartbeat element */
+.heartbeat {
+    width: 100px; /* Width of the element */
+    height: 70px; /* Height of the element */
+    border-radius: 50%; /* Makes the element circular */
+    margin: 50px auto; /* Centers the element horizontally */
+    animation: heartbeat 3s; /* Apply the animation */
+    animation-delay: 18s; /* Delay before the animation starts */
+}
+
+/* Keyframes for the heartbeat animation */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1); /* Initial and final state: no scaling */
+    }
+    20% {
+        transform: scale(1.2); /* Scales up the element */
+    }
+    40% {
+        transform: scale(1); /* Returns to original size */
+    }
+    60% {
+        transform: scale(1.2); /* Scales up again */
+    }
+    80% {
+        transform: scale(1); /* Returns to original size */
+    }
+}
+
+
+/* Basic styling for the wheeling element */
+.wheel {
+    height: 70px; /* Height of the element */
+    border-radius: 50%; /* Makes the element circular */
+    animation: wheeling 2s linear ; /* Apply the animation */
+	animation-delay: 29s; /* Delay before the animation starts */
+
+}
+
+/* Keyframes for the wheeling animation */
+@keyframes wheeling {
+    0% {
+        transform: rotate(0deg); /* Start from 0 degrees */
+    }
+    100% {
+        transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
+}
+
+
+
+
+
+/* Keyframes for the bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the bottom */
+    }
+    50% {
+        transform: translateY(-100px); /* Move up 100px */
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1227,32 +1298,34 @@ form[name="Contact Form"] #form-field-phone{
 			<div class="e-con-inner">
 				<div class="elementor-element elementor-element-c62e63c e-con-full flip-card-inner e-flex e-con e-child" data-id="c62e63c" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="elementor-element elementor-element-9e075c9 e-con-full flip-card-front e-flex e-con e-child" data-id="9e075c9" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;full&quot;}">
-						<div class="elementor-element elementor-element-5a468c1 e-transform animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="5a468c1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:2000,&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-5a468c1 e-transform animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="5a468c1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:1000,&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="text-editor.default">
 							<div class="elementor-widget-container">
 								<style>/*! elementor - v3.17.0 - 08-11-2023 */
 										.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:right;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>PLEASE JOIN US FOR<br>THE wedding OF</p>						</div>
 						</div>
-						<div class="elementor-element elementor-element-ae49ebc animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="ae49ebc" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:5000}" data-widget_type="heading.default">
+						<div class="elementor-element elementor-element-ae49ebc animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="ae49ebc" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:3000}" data-widget_type="heading.default">
 							<div class="elementor-widget-container">
 								<style>/*! elementor - v3.17.0 - 08-11-2023 */
-										.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Zahra</h2>		</div>
+										.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style>
+										<h2 class="elementor-heading-title elementor-size-default kids heartbeat ">Zahra</h2>		
+							</div>
 						</div>
-						<div class="elementor-element elementor-element-6b6f673 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="6b6f673" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:6500}" data-widget_type="heading.default">
+						<div class="elementor-element elementor-element-6b6f673 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="6b6f673" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:5500}" data-widget_type="heading.default">
 							<div class="elementor-widget-container">
 								<h2 class="elementor-heading-title elementor-size-default">&</h2>		
 							</div>
 						</div>
-						<div class="elementor-element elementor-element-6c21a88 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="6c21a88" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:10000}" data-widget_type="heading.default">
+						<div class="elementor-element elementor-element-6c21a88 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="6c21a88" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:6700}" data-widget_type="heading.default">
 							<div class="elementor-widget-container">
-								<h2 class="elementor-heading-title elementor-size-default">Rouhollah</h2>		
+								<h2 class="elementor-heading-title elementor-size-default kids wheel ">Rouhollah</h2>		
 							</div>
 						</div>
-						<div class="elementor-element elementor-element-d4cc51a e-transform animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="d4cc51a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:12000,&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-d4cc51a e-transform animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="d4cc51a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:9000,&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="text-editor.default">
 							<div class="elementor-widget-container">
 									<p>september</p>						
 							</div>
 						</div>
-						<div class="elementor-element elementor-element-7de7e31 e-con-full animated-slow e-flex elementor-invisible e-con e-child" data-id="7de7e31" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;animation_delay&quot;:13500,&quot;animation&quot;:&quot;fadeIn&quot;}">
+						<div class="elementor-element elementor-element-7de7e31 e-con-full animated-slow e-flex elementor-invisible e-con e-child" data-id="7de7e31" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;animation_delay&quot;:10000,&quot;animation&quot;:&quot;fadeIn&quot;}">
 							<div class="elementor-element elementor-element-05a93ba e-con-full animated-slow e-flex elementor-invisible e-con e-child" data-id="05a93ba" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:1500}">
 								<div class="elementor-element elementor-element-e7fe873 fadeIn elementor-widget elementor-widget-text-editor" data-id="e7fe873" data-element_type="widget" data-widget_type="text-editor.default">
 									<div class="elementor-widget-container">
@@ -1277,12 +1350,12 @@ form[name="Contact Form"] #form-field-phone{
 							</div>
 										
 						</div>
-						<div class="elementor-element elementor-element-31c0cff e-transform animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="31c0cff" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:15500,&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-31c0cff e-transform animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="31c0cff" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:10500,&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="text-editor.default">
 							<div class="elementor-widget-container">
 								<p>2024</p>						
 							</div>
 						</div>
-						<div class="elementor-element elementor-element-5297751 e-transform animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="5297751" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:17500,&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-5297751 e-transform animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="5297751" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:13500,&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="text-editor.default">
 							<div class="elementor-widget-container">
 								<p>Floriya Garden</p>
 							</div>
@@ -1292,7 +1365,7 @@ form[name="Contact Form"] #form-field-phone{
 			</div>
 		</div>
 		<div class="elementor-element elementor-element-676cc25 card-button-logo-container e-flex e-con-boxed e-con e-parent" data-id="676cc25" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
-			<div class="elementor-element elementor-element-d6d5b5e animated-slow elementor-countdown--label-block elementor-widget elementor-widget-countdown animated fadeIn hidden" data-id="d6d5b5e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:5000}" data-widget_type="countdown.default">
+			<div class="elementor-element elementor-element-d6d5b5e animated-slow elementor-countdown--label-block elementor-widget elementor-widget-countdown animated fadeIn" data-id="d6d5b5e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:5000}" data-widget_type="countdown.default">
 				<div class="elementor-widget-container">
 					<style>
 						/* Initially hide the countdown */
@@ -1357,7 +1430,7 @@ form[name="Contact Form"] #form-field-phone{
 									countdown.style.visibility = 'visible';
 									countdown.style.opacity = '1';
 									countdown.classList.add('show'); // Add the class to trigger animation
-								}, 20000); 
+								}, 19000); 
 							}
 						});
 					</script>
@@ -1415,7 +1488,7 @@ form[name="Contact Form"] #form-field-phone{
 									countdown.style.visibility = 'visible';
 									countdown.style.opacity = '1';
 									countdown.classList.add('show'); // Add the class to trigger animation
-								}, 22000); 
+								}, 21000); 
 							}
 						});
 					</script>
