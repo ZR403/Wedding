@@ -1298,6 +1298,16 @@ form[name="Contact Form"] #form-field-phone{
 						.elementor-widget-countdown .elementor-countdown-digits {
 							font-family: 'Arial', sans-serif; /* or any other common font */
 						}
+						/* Ensure that no background is applied to the countdown elements */
+							.elementor-widget-countdown,
+							.elementor-countdown-wrapper,
+							.elementor-countdown-item,
+							.elementor-countdown-digits,
+							.elementor-countdown-label {
+								background: none !important; /* Remove background color */
+								background-image: none !important; /* Remove background image */
+							}
+						}
 						/*! elementor-pro - v3.13.1 - 11-05-2023 */
 						.elementor-widget-countdown 
 						.elementor-countdown-expire--message{display:none;padding:20px;text-align:center}
